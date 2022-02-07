@@ -1,0 +1,463 @@
+@media (max-width: 1200px) {
+    /* HEADER */
+    .avatar {
+        display: none;
+    }
+    .wordmark {
+        display: block;
+    }
+    .logo {
+        justify-content: start;
+    }
+    /* END OF HEADER */
+    /* HERO */
+    .hero h1 {
+        font-size: 66px;
+    }
+    /* END OF HERO */
+    /* CONTACT PAGE */
+    .container {
+        display: grid;
+        grid-template-columns: 516px;
+    }
+    .form-container {
+        margin: 0;
+    }
+    /* END OF CONTACT PAGE */
+    /* INFOBOX */
+    .info-box {
+        padding: 1rem 2rem 1rem 2rem;
+        margin-right: 1rem;
+    }
+    /* END OF INFOBOX */
+    /* CONTACT SPECIFIC */
+    .split-container {
+        display: grid;
+        grid-template-columns: 516px;
+    }
+    .form-container {
+        margin: 0;
+    }
+    /* END OF CONTACT SPECIFIC */
+}
+
+@media (max-width: 1110px) {
+    /* NAVIGATION HEADER */
+    nav {
+        margin-top: 3rem;
+        padding: 0 0 0 3rem;
+    }
+    .contact {
+        display: none;
+    }
+    .primary-navigation {
+        position: fixed;
+        inset: 0 0 0 0%;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--clr-secondary);
+        width: auto;
+        height: auto;
+        transform: translateY(100%);
+        transition: 350ms ease-out;
+    }
+    .primary-navigation[data-visible="true"] {
+        transform: translateY(0%);
+    }
+    .menu-toggle {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        background-image: url("img/menu-open.svg");
+        position: absolute;
+        z-index: 9999;
+        right: 3rem;
+        width: 2.8125rem;
+        height: 2.3125rem;
+    }
+    .menu-toggle[aria-expanded="true"] {
+        background-image: url("img/menu-close.svg");
+    }
+    .primary-navigation a {
+        color: var(--clr-primary);
+        text-transform: none;
+        font-size: 45px;
+        margin-bottom: 1rem;
+    }
+    .primary-navigation li:nth-child(3) {
+        display: none;
+    }
+    .primary-navigation li:nth-child(4),
+    .primary-navigation li:nth-child(5),
+    .primary-navigation li:nth-child(6) {
+        display: block;
+    }
+    .icons {
+        display: none;
+    }
+    /* END OF NAVIGATION HEADER */
+    /* HERO */
+    .hero br {
+        display: none;
+    }
+    .hero h1 {
+        font-size: 56px;
+    }
+    .hero div {
+        background-size: cover;
+    }
+    /* END OF HERO */
+    /* FOOTER */
+    .footer-container {
+        height: 567px;
+        margin-top: 2rem;
+    }
+    .footer-main {
+        grid-template-columns: 446px;
+    }
+    .footer-lists {
+        justify-content: start;
+    }
+    .footer-lists ul {
+        margin-right: 2rem;
+    }
+    /* END OF FOOTER */
+    /* INFOBOX */
+    .whole-box {
+        margin: 2rem 1rem 2rem 1rem;
+        height: 800px;
+        padding: 1rem 0 0 0;
+    }
+    .top-header {
+        text-align: start;
+    }
+    .bottom-box {
+        padding: 0;
+    }
+    .list-container {
+        flex-direction: column;
+        height: fit-content;
+        border: 0;
+    }
+    .info-box {
+        margin: 0;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 1rem 0 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        height: 97px;
+    }
+    .info-box div {
+        display: flex;
+        width: 85%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .info-box img {
+        width: 63px;
+        height: 62px;
+    }
+    .info-box p {
+        font-size: 12px;
+        width: 50%;
+    }
+    .info-box h3 {
+        font-size: 15px;
+        width: 35%;
+    }
+    /* END OF INFOBOX */
+    /* ACCENT BOX */
+    .accent-box {
+        height: 810px;
+        display: grid;
+        box-shadow: 0 0;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "i" "t" "t";
+        padding: 2rem 0rem 2rem 0rem;
+        margin: 2rem 1rem 2rem 1rem;
+    }
+    .acc-bx-text {
+        height: 400px;
+        width: 100%;
+    }
+    .acc-bx-text>div:nth-child(1) {
+        text-align: center;
+    }
+    .acc-bx-text>div:nth-child(2) {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 200;
+        padding: 0 0 0 0;
+    }
+    .acc-bx-text>div:nth-child(3) p {
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+    }
+    .acc-bx-text>div:nth-child(3) {
+        width: 93%;
+        display: flex;
+        justify-content: center;
+        margin-left: 1rem;
+    }
+    .acc-bx-img {
+        height: 350px;
+        width: 87%;
+        justify-self: center;
+        background-color: #eff3f6;
+    }
+    /* ACCENT DIAL */
+    .dial-box {
+        padding-left: 1.4rem;
+    }
+    .dial-number {
+        margin: 0;
+        width: 100%;
+    }
+    .dial-number img {
+        border-width: 2px;
+    }
+    .dial-number p {
+        margin: 0 0.5rem 0 0.5rem;
+        border-width: 2px;
+    }
+    .dial-explore {
+        width: 100%;
+        margin: 0;
+    }
+    .dial-explore h4 {
+        font-weight: 500;
+        font-size: 14px;
+        width: 100%;
+        border-width: 2px;
+        border-right: 0;
+    }
+    .dial-explore img {
+        border-width: 2px;
+    }
+    /* END OF ACCENT BOX */
+    /* CONTACT-MINI */
+    .contact-mini-wrap {
+        background-color: var(--clr-secondary);
+        height: 532px;
+        margin: 1rem;
+        box-shadow: none;
+    }
+    /* END OF CONTACT-MINI */
+    /* DOMAIN CHOICE */
+    .domain-we-offer {
+        width: 100%;
+        padding: 0 1rem 0 1rem;
+    }
+    .course-top-box {
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .course-box {
+        height: 200px;
+    }
+    .course-bottom-box {
+        width: 100%;
+    }
+    /* END OF DOMAIN CHOICE */
+    /* CONTACT SPECIFIC */
+    .split-container {
+        grid-template-columns: 70%;
+    }
+    .image-container {
+        width: 100%;
+    }
+}
+
+
+/* ENTERING THE MOBILE MODE */
+
+@media (max-width: 585px) {
+    /* NAVIGATION */
+    nav {
+        padding: 0 1.5rem 0 1.5rem;
+    }
+    .menu-toggle {
+        right: 2rem;
+    }
+    /* END OF NAVIGATION */
+    /* FOOTER */
+    .footer-main {
+        padding: 0 1rem 0 1rem;
+    }
+    .footer-credits {
+        padding: 2rem 1rem 0 1rem;
+    }
+    .footer-credits p {
+        font-size: 10px;
+    }
+    .footer-details p {
+        font-size: 12px;
+        margin-right: 0.5rem;
+    }
+    .footer-lists ul {
+        font-size: 12px;
+    }
+    /* END OF FOOTER */
+    /* HERO */
+    .hero h1 {
+        font-size: 46px;
+    }
+    /* END OF HERO */
+    /* INFOBOX */
+    .whole-box {
+        justify-content: space-between;
+        height: 900px;
+        margin: 0;
+    }
+    .top-header p {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+    .top-header {
+        padding: 0 1rem 0 1rem;
+        text-align: center;
+    }
+    .top-header h1 {
+        margin: 0;
+    }
+    .top-header h3 {
+        font-size: 10px;
+        margin-bottom: 1rem;
+    }
+    .info-box {
+        height: 150px;
+    }
+    .info-box img {
+        width: 53px;
+        height: 52px;
+    }
+    .info-box h3 {
+        font-size: 13px;
+    }
+    .list-container {
+        height: fit-content;
+    }
+    /* END OF INFOBOX */
+    /* ACCENT BOX */
+    .accent-box {
+        height: 700px;
+        padding: 1.5rem 0rem 0rem 0rem;
+        margin: 2rem 0 2rem 0;
+    }
+    .acc-index {
+        height: 650px;
+    }
+    .acc-bx-text>div:nth-child(1) h3 {
+        font-size: 10px;
+        text-align: center;
+    }
+    .acc-bx-text>div:nth-child(2) h1 {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 200;
+        padding: 0 0 0 0;
+        margin: 1rem 0 1rem 0;
+    }
+    .acc-bx-text>div:nth-child(3) p {
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+    }
+    .acc-bx-text>div:nth-child(3) {
+        width: 93%;
+        display: flex;
+        justify-content: center;
+        margin-left: 1rem;
+    }
+    .acc-bx-img {
+        height: 300px;
+        width: 87%;
+        justify-self: center;
+        background-color: #eff3f6;
+    }
+    /* ACCENT DIAL */
+    .dial-box {
+        flex-direction: column;
+        padding: 0;
+    }
+    .dial-number {
+        margin-bottom: 0.7rem;
+        width: 100%;
+    }
+    .dial-number img {
+        height: 57px;
+        font-size: 26px;
+        border-width: 2px;
+    }
+    .dial-number p {
+        height: 57px;
+        margin: 0 0rem 0 0.5rem;
+        border-width: 2px;
+    }
+    .dial-explore {
+        width: 100%;
+        margin: 0;
+    }
+    .dial-explore h4 {
+        font-weight: 500;
+        font-size: 14px;
+        height: 57px;
+        width: 100%;
+        border-width: 2px;
+        border-right: 0;
+    }
+    .dial-explore img {
+        height: 57px;
+        border-width: 2px;
+    }
+    /* TESTIMONIALS */
+    .testimonial-border-box {
+        width: 90%;
+    }
+    .testimonial-box h3 {
+        font-size: 10px;
+    }
+    .paragraph {
+        padding: 1rem;
+    }
+    .testimonial-box p {
+        font-size: 12px;
+    }
+    /* END OF TESTIMONIALS */
+    /* CONTACT MINI */
+    .contact-mini-wrap {
+        text-align: center;
+        align-items: center;
+    }
+    .contact-mini-wrap h3 {
+        font-size: 10px;
+    }
+    .contact-mini-wrap h1 {
+        margin-bottom: 1.8rem;
+    }
+    .contact-mini-wrap button {
+        width: 100%;
+    }
+    .contact-mini-wrap form {
+        width: 100%;
+    }
+    /* END OF CONTACT-MINI */
+    /* DOMAIN CHOICE */
+    .course-bottom-box {
+        padding-left: 0.8rem;
+    }
+    /* END OF DOMAIN CHOICE */
+    /* CONTACT SPECIFIC */
+    .split-container {
+        grid-template-columns: 85%;
+    }
+    .form-container button {
+        width: 100%;
+    }
+}
