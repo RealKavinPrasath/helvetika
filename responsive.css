@@ -108,7 +108,8 @@
   }
   .primary-navigation li:nth-child(4),
   .primary-navigation li:nth-child(5),
-  .primary-navigation li:nth-child(6) {
+  .primary-navigation li:nth-child(6),
+  .primary-navigation li:nth-child(7) {
     display: block;
   }
   .icons {
